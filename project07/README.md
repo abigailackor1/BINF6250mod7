@@ -9,7 +9,7 @@ Some pseudocode here
 ```
 
 # Results
-Results outpu
+Results output
 
 # Successes
 Description of the team's learning points
