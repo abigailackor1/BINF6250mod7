@@ -1,9 +1,9 @@
 # Introduction
-Description of the project
+This project implements the Burrows-Wheeler Transform (BWT) and FM-index backward search for exact string matching, the approach used by short-read aligners such as Bowtie and BWA. After a $ end marker is added to the text, the BWT is built both by sorting all rotations and from a suffix array. A count table and an occurrence table are built from the BWT, and backward search uses them to apply the LF mapping, processing the pattern right to left and narrowing a block of rows (lower to upper) until the matching rows remain or the block is empty. Matching rows are converted to text positions through the suffix array. The BWT can also be compressed and restored with run-length encoding.
+
+All required functionality was completed. All nine functions were implemented and tested on small hand-worked examples, and find_match() was tested on patterns that occur once, occur several times, overlap, and do not occur.
 
 # Pseudocode
-Put pseudocode in this box:
-
 ```
 BWT Algorithm
 Phase A: Build the BWT
